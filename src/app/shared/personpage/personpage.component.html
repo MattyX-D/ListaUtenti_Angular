@@ -1,0 +1,5 @@
+@if(lastId === -2) {
+    <app-personlist (addUsr)="enterEdit(-1)" (editUsr)="enterEdit($event)"></app-personlist>
+  } @else {
+    <app-editpage [id]="lastId" (exit)="resetId()"></app-editpage>
+  }

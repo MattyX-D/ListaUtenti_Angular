@@ -1,0 +1,22 @@
+* {
+    margin: 10px;
+    color: white;
+}
+
+input, button {
+    color: black;
+}
+
+input {
+    width: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    width: 100%;
+}

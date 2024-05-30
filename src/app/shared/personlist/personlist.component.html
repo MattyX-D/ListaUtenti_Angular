@@ -1,0 +1,20 @@
+<h1>Lista degli utenti</h1>
+<ul>
+    @for (user of users; track $index) {
+    <li>
+        <app-person
+            [id]="user.id"
+            [name]="user.name"
+            [age]="user.age"
+            [birthdate]="user.birthDate"
+            [address]="user.address">
+        </app-person>
+        <button type="button" class="btn btn-primary" (click)="edit(user.id)">
+            <i class="fa fa-pencil"></i>
+        </button>
+    </li>
+    }
+</ul>
+<button class="btn btn-primary" (click)="add()">
+    <i class="fa fa-plus"></i>
+</button>

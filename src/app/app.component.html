@@ -1,0 +1,15 @@
+<div class="row upperlimit"></div>
+<div class="row align-content-center">
+  <div class="col-lg-3"></div>
+  <div class="col-lg-6 loginForm align-content-center text-center">
+    @if(statusLogin) {
+        <app-personpage></app-personpage>
+    } @else {
+      <app-loginbox (loginStatus)="setStatus($event)"></app-loginbox>
+      @if(!errorCredential) {
+        <app-errbox></app-errbox>
+      }
+    }
+  </div>
+</div>
+<div class="col-lg-3"></div>

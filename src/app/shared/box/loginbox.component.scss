@@ -1,0 +1,25 @@
+* {
+    margin: 20px;
+}
+
+input {
+    margin: 3px;
+}
+
+button {
+    margin-bottom: 5px;
+}
+
+div {
+    margin: 10px;
+    input {
+        width: 45%;
+        display: inline;
+    }
+    img {
+        margin: 0px;
+        height: 25%;
+        width: 25%;
+        border-radius: 50%;
+    }
+}

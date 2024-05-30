@@ -1,0 +1,15 @@
+<div>
+    <h1>{{titleString}}</h1><br>
+</div>
+<form [formGroup]="userFg" (ngSubmit)="editReq()">
+    <div><label>Name</label>
+    <input type="text" formControlName="name" /><br></div>
+    <div><label>Age</label>
+    <input type="number" formControlName="age" /><br></div>
+    <div><label>Birthdate</label>
+    <input type="date" formControlName="birthdate" /><br></div>
+    <div><label>Address</label>
+    <input type="address" formControlName="address" /><br></div>
+    <div><button type="submit" class="btn btn-primary" [disabled]="userFg.invalid">{{buttonValue}}</button>
+    @if(id != -1) {<button type="button" class="btn btn-danger" (click)="deleteReq()">Elimina</button>}</div>
+</form>
