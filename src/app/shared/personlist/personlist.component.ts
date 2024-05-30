@@ -1,4 +1,4 @@
-import { ChangeDetectorRef, Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { User } from '../models/user.interface';
 import { PersonComponent } from '../person/person.component';
 import { UserlistService } from '../../userlist.service';
